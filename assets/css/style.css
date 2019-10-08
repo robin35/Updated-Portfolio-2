@@ -1,0 +1,260 @@
+
+/* ------------------------Styles the Navigation bar - upper page---------------------- */
+
+/* Styles the Navigation bar - upper page */
+.topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  .topnav a {
+    float: right;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4aaaa5;
+    color: #ffffff;
+  }
+
+
+/* Styles the h1 Header in the Navigation bar - upper page */
+h1{
+    font-family: georgia, Times, 'Times New Roman', serif;
+    background-color: #ffffff;
+    color: #4aaaa5;
+    text-align: center;
+    width: 60%;
+    padding: 7px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Styles the Navigation Menu - upper page */
+nav{
+    text-align: right;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+/* Pseudo-class for the Navigation Menu: unvisited link */
+a:link {
+    color: #777777;
+}
+  
+/* Pseudo-class for the Navigation Menu: visited link */
+a:visited {
+    color: #4aaaa5;
+}
+  
+/* Pseudo-class for the Navigation Menu: mouse over link */
+a:hover {
+    color: red;
+}
+  
+/* Pseudo-class for the Navigation Menu: selected link */
+a:active {
+    color: blue;
+}
+
+
+
+/* -----------------------------Styles the "About" page--------------------------- */
+
+/* Styles all p tags */
+p{
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color:#777777;
+    line-height: 1.6;
+    padding: 25px;
+}
+
+
+
+/* Styles the About containers - lower page */
+#container2{
+    margin: auto;
+    background-color: #dddddd;
+    background-image: repeating-linear-gradient(#dddddd,#a2a099);
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#box2{
+    margin: auto;
+    width: 960px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+/* Floats the About Me image - lower page */
+#about-img{
+    float: left;
+    padding: 25px;
+}
+
+
+
+/* -----------------------------Styles the "Contacts" page--------------------------- */
+
+/* Styles the Contacts containers - lower page */
+
+#container4{
+    margin: auto;
+    box-sizing: content-box;
+    background-color: #dddddd;
+    background-image: repeating-linear-gradient(#dddddd,#a2a099);
+    padding-top: 15px;
+    display: flex;
+}
+
+#box4{
+    margin: auto;
+    width: 960px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.form-inline {  
+    padding: 25px;
+    color:#777777;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.form-inline button {
+    margin-left: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: none;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 8px;
+}
+
+.form-inline button:hover {
+  background-color: red;
+}
+
+
+
+/* -----------------------------Styles the "Portfolio" page--------------------------- */
+
+
+/* Styles the Portfolio containers - lower page */
+#container3{
+    margin: auto;
+    background-color: #dddddd;
+    background-image: repeating-linear-gradient(#dddddd,#a2a099);
+    padding-top: 15px;
+    display: flex;
+}
+
+#box3{
+    margin: auto;
+    width: 960px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+/* Styles the Portfolio images table - lower page */
+#portfolio > div{
+    margin-left: 25px;
+    float: left;
+}
+
+/* Overlays verbiage on the images */
+#position{
+    color: black;
+    height: 25px;
+    text-align: center;
+    top: -40px;
+    left: 15px;
+    padding-top: 6px;
+}
+
+table{
+    margin-left: 25px;
+}
+
+/* ------------Styles all h2 Headers and Horizontal lines - lower page---------- */
+
+
+/* Styles h2 Header  - lower page */
+.headers{
+    color:#4aaaa5;
+    padding: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    animation-name: slide;
+    animation-duration: 4s;
+}
+
+/* Styles the horizontal line below h2 headers - lower page */
+hr{
+    margin-top: 0.5px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-width: 3px;
+    border-color: #cccccc;
+}
+
+
+
+/* -----------------------------Styles the "Footer"--------------------------- */
+
+footer{
+    text-align: center;
+    background-color: #666666;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: white;
+    font-size: small;
+    height: 25px;
+    border-style: solid none none none;
+    border-width: 8px;
+    border-color: #4aaaa5;
+    vertical-align: bottom;
+    padding-top: 10px;
+}
+
+
+
+/* --------------------------------Media Queries------------------------------ */
+
+/* Desktop layout */
+@media screen and (max-width: 980px) {
+}
+
+/* Tablet layout */
+@media screen and (max-width: 768px) {
+}
+
+/* Smart phone layout in landscape. Positon of Header is static. */
+
+@media screen and (max-width: 640px) {
+    .topnav {display: none;}
+  }
+
+
+
+/* --------------------------------Animations------------------------------ */
+@keyframes slide {
+    from {color:#4aaaa5;}
+    to   {color: red;}
+  }
+
